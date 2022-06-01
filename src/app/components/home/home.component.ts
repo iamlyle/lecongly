@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,4 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
