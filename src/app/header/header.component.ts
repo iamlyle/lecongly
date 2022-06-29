@@ -1,6 +1,7 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, Renderer2, Inject, LOCALE_ID, AfterViewInit } from "@angular/core";
+import { Component, OnInit, Input, ViewChild, ElementRef, Renderer2, Inject, LOCALE_ID, AfterViewInit, HostListener } from "@angular/core";
 import { faBars, faShareAlt, faCloudDownloadAlt, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { NgNavigatorShareService } from "ng-navigator-share";
+
 
 @Component({
   selector: "app-header",
@@ -9,7 +10,14 @@ import { NgNavigatorShareService } from "ng-navigator-share";
 })
 
 export class HeaderComponent implements OnInit, AfterViewInit {
-    
+  
+  numberOfClicks = 0;
+
+  // @HostListener('click', ['$event.target'])
+  // onClick(btn_content) {
+  //   console.log(btn_content,'button', 'number of clicks:', this.numberOfClicks++);
+  // }
+
   private _activeSection: any;
   private _pageXOffset: any;
   private ngNavigatorShareService: NgNavigatorShareService;
@@ -21,6 +29,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   @ViewChild("nav") nav: ElementRef;
   @ViewChild("shareBtn") shareBtn: ElementRef;
+
+
 
   constructor(
     @Inject(LOCALE_ID) public locale: string,
@@ -48,7 +58,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   @Input()
   set activeSection(value: any) {
     this._activeSection = value;
-    this.updateNavigation();
+    //this.updateNavigation();
   }
 
   ngAfterViewInit() {    
@@ -94,16 +104,34 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.hasMenuToggled = !this.hasMenuToggled;
   }
 
-  resetMenu() {
+  resetMenu(classOfButton) {
     this.hasMenuToggled = this.pageXOffset > 1024;
+    if(classOfButton){
+      this.removeAllClass(['welcome', 'aboutme', 'experiences', 'posts', 'contact']);
+      console.log('button', classOfButton, 'number of clicks:', this.numberOfClicks++);
+      let element = document.querySelector('.' + classOfButton) as HTMLElement;
+      element.classList.add('active');
+    }
+
+  }
+
+  removeAllClass(classes: string[]){
+    let element
+    for (var value of classes){
+      console.log(value);
+      element = document.querySelector('.' + value) as HTMLElement;
+      element.classList.remove('active');
+      console.log(element);
+    }
+
   }
 
   async share() {
     try{
       await this.ngNavigatorShareService.share({
-        title: "Live Resume - Guilherme Borges Bastos",
-        text: "Hello, I'm a Full-stack Java Web Developer with 10+ years of experience designing web and mobile projects. Find out more in my live-resume!",
-        url: "https://guilhermeborgesbastos.com"
+        title: "My Profile - Le Cong Ly",
+        text: "Hello, I'm a Embedded Developer with 2+ years of experience designing embedded and testing automotive projects. Find out more in my profile!",
+        url: "https://iamlyle.github.io/lecongly/"
       });
     } catch(error) {
       console.log("You app is not shared, reason: ", error);

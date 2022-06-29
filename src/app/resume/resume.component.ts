@@ -8,7 +8,7 @@ import { debounce } from "../core/utils";
 })
 export class ResumeComponent {
 
-  isSticky: boolean = false;
+  isSticky: boolean = true;
   activeSection: string;
 
   pageYOffset: number = 0;
@@ -22,7 +22,7 @@ export class ResumeComponent {
   @debounce()
   checkScroll() {
     this.pageYOffset = window.pageYOffset;
-    this.isSticky = pageYOffset >= 250;
+    // this.isSticky = pageYOffset >= 250;
   }
 
   @HostListener("window:resize")
