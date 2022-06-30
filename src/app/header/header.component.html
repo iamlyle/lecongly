@@ -10,7 +10,7 @@
 
     <div class="child nav-container" #nav [hidden]="!hasMenuToggled" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <ul>
-            <li><a (click)="resetMenu('welcome')" href="#" class="welcome" itemprop="name" itemprop="logo">Welcome</a></li>
+            <li><a (click)="resetMenu('welcome')" href="#" class="welcome active" itemprop="name" itemprop="logo">Welcome</a></li>
             <li><a (click)="resetMenu('aboutme')" href="#about" class="aboutme" i18n="nav@@aboutMe" itemprop="url"><span itemprop="name">About me</span></a></li>
             <li><a (click)="resetMenu('experiences')" href="#experience" class="experiences" i18n="nav@@experiences" itemprop="url"><span itemprop="name">Experiences</span></a></li>
             <li><a (click)="resetMenu('posts')" href="#posts" class="posts" i18n="nav@@posts" itemprop="url"><span itemprop="name">Posts</span></a></li>
@@ -18,20 +18,6 @@
             <!-- TODO: update here -->
             <li><a (click)="resetMenu('')" href="assets/LeCongLy-CV-Embedded.pdf" i18n-title="nav@@open.as.pdf" title="Open Resume as PDF" target="_blank"><fa-icon [icon]="faCloudDownloadAlt" class="bar-icon"></fa-icon></a></li>
         </ul>
-    </div>
-
-    <div class="child language-container">
-        <div class="frame">
-            <ul>
-                <!-- <li itemprop="availableLanguage" itemscope itemtype="https://schema.org/Language">
-                    <a href="/en/index.html" [ngClass]="{'active': locale === 'en'}" itemprop="name">EN</a>
-                </li>
-                <li itemprop="availableLanguage" itemscope itemtype="https://schema.org/Language">
-                    <a href="/pt/index.html" [ngClass]="{'active': locale === 'pt'}" itemprop="name">PT</a>
-                </li> -->
-
-            </ul>
-        </div>
     </div>
 
     <div class="child share-container" #shareBtn>

@@ -19,10 +19,10 @@ export class ResumeComponent {
   }
 
   @HostListener("window:scroll")
-  @debounce()
+  //@debounce()
   checkScroll() {
     this.pageYOffset = window.pageYOffset;
-    // this.isSticky = pageYOffset >= 250;
+    this.isSticky = this.pageYOffset >= 50;
   }
 
   @HostListener("window:resize")

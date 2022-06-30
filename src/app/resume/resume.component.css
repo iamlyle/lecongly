@@ -10,10 +10,13 @@ app-header {
 
 .sticky {
     position: fixed;
+
+}
+
+.zerobackground {
     background-color: #fff;
     box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.43);
 }
-
 app-footer {
     position: relative;
     top: -3em;
