@@ -6,12 +6,13 @@ app-header {
     width: 100%;
     padding: 1em 0;
     transition: 0.3s;
+    position: fixed;
 }
 
-.sticky {
+/* .sticky {
     position: fixed;
 
-}
+} */
 
 .zerobackground {
     background-color: #fff;

@@ -8,7 +8,7 @@ import { Meta, Title } from "@angular/platform-browser";
 })
 export class AppComponent implements OnInit {
 
-  title: string = "My Profile - Le Cong Ly";
+  title: string = "Le Cong Ly - Profile Page";
 
   constructor(
     private titleService: Title,

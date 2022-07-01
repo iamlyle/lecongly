@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ElementRef, Renderer2, Inject, LOCALE_ID, AfterViewInit, HostListener } from "@angular/core";
 import { faBars, faShareAlt, faCloudDownloadAlt, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { NgNavigatorShareService } from "ng-navigator-share";
+import { debounce } from "../core/utils";
 
 
 @Component({
@@ -58,7 +59,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   @Input()
   set activeSection(value: any) {
     this._activeSection = value;
-    //this.updateNavigation();
+
+    this.updateNavigation();
   }
 
   ngAfterViewInit() {    
@@ -74,18 +76,15 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.faCloudDownloadAlt = faCloudDownloadAlt;
   }
 
+  @debounce()
   private updateNavigation() {
-
     if(this._activeSection && this.renderer) {
-      
       // Remove any selected anchor
       const activePreviousElem = this.nav.nativeElement.querySelector("a.active");
-      
       if(activePreviousElem) {
         this.renderer.removeClass(activePreviousElem, "active");
       }
-
-      const targetElem = this.nav.nativeElement.querySelector(`a[href^="#${this._activeSection}"]`);
+      const targetElem = this.nav.nativeElement.querySelector('.' + this._activeSection);
       if(targetElem) {
         this.renderer.addClass(targetElem, "active");
       }
@@ -104,25 +103,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.hasMenuToggled = !this.hasMenuToggled;
   }
 
-  resetMenu(classOfButton) {
-    this.hasMenuToggled = this.pageXOffset > 1024;
-    if(classOfButton){
-      this.removeAllClass(['welcome', 'aboutme', 'experiences', 'posts', 'contact']);
-      console.log('button', classOfButton, 'number of clicks:', this.numberOfClicks++);
-      let element = document.querySelector('.' + classOfButton) as HTMLElement;
-      element.classList.add('active');
-    }
-
-  }
-
-  removeAllClass(classes: string[]){
-    let element
-    for (var value of classes){
-      console.log(value);
-      element = document.querySelector('.' + value) as HTMLElement;
-      element.classList.remove('active');
-      console.log(element);
-    }
+  resetMenu() {
+    this.hasMenuToggled = this.pageXOffset > 1024
 
   }
 

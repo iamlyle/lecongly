@@ -8,7 +8,7 @@ import { debounce } from "../core/utils";
 })
 export class ResumeComponent {
 
-  isSticky: boolean = true;
+  isBackgrounded: boolean = true;
   activeSection: string;
 
   pageYOffset: number = 0;
@@ -19,10 +19,9 @@ export class ResumeComponent {
   }
 
   @HostListener("window:scroll")
-  //@debounce()
   checkScroll() {
     this.pageYOffset = window.pageYOffset;
-    this.isSticky = this.pageYOffset >= 50;
+    this.isBackgrounded = this.pageYOffset >= 150;
   }
 
   @HostListener("window:resize")
@@ -34,5 +33,6 @@ export class ResumeComponent {
   @debounce(150)
   onViewport(isOnViewPort: any, element?: string) {
     this.activeSection = element;
+
   }
 }

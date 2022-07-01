@@ -34,7 +34,7 @@ export class InViewportDirective implements OnChanges {
             height: window.innerHeight
         };
 
-        const sectionMarging = 770;
+        const sectionMarging = 370;
         const tViz = rec.top >= 0 && rec.top < (vp.height - sectionMarging);
         const bViz = rec.bottom > 0 && rec.bottom <= (vp.height - sectionMarging);
 
