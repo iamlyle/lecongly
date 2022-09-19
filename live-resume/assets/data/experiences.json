@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "position": 1,
+        "startAt": "09-05-2016",
+        "endAt": "10-12-2020",
+        "companyName": "HCMUTE",
+        "website": "https://hcmute.edu.vn/",
+        "logo": "assets/template/experience/logo/hcmute-logo.png",
+        "city": "Thu Duc City",
+        "country": "Ho Chi Minh",
+        "role": "Student",
+        "description": "This is a technical school. Here I have learned a lot of things from mechanics, electronics and even programming. This is a great place to start because I fell in love with embedded programming from here. Here I learned about hardware, how to process signals and design an application according to the requirements from reality.",
+        "technologies": [
+            "C/C++", "C#", "Python", "Git" ,"HTML", "CSS", "Windows"
+        ],
+        "medias": [
+            {
+                "icon": "linkedin",
+                "title": "LinkedIn Ban Vien",
+                "http": "https://www.linkedin.com/school/hcmutespkt/"
+            },
+            {
+                "icon": "facebook",
+                "title": "Facebook HCMUTE",
+                "http": "https://vi-vn.facebook.com/dhspkt.hcmute/"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/uberaba.jpg"
+    },
+    {
+        "id": 2,
+        "position": 2,
+        "startAt": "02-21-2018",
+        "endAt": "10-12-2020",
+        "companyName": "Open Lab",
+        "website": "https://openlab.hcmute.edu.vn/",
+        "logo": "assets/template/experience/logo/open-lab-logo.png",
+        "city": "District 4, Ho Chi Minh City",
+        "country": "Ho Chi Minh",
+        "role": "Embedded Software Engineer",
+        "description": "A <b>E-tática</b> é uma agência especializada em soluções para <i>comércio eletrônico</i>, marketing digital e identidade visual desde 2008, trabalhando com grandes, pequenos e médios negócios, oferecendo para seus clientes, o know-how na integração de seus negócios com <i>Sistemas integrados de gestão empresarial (ERP)</i> e <i>APIs de terceiros</i>, tais como <i>provedores de pagamento personalizados</i>, fazendo a integração do gerenciamento interno da plataforma on-line e da loja física, sendo certificada pelas principais plataformas do mercado.<br><br>Na <i>E-tática </i>, trabalhei para desenvolver soluções personalizadas para clientes do atacado e varejo, valorizando a qualidade e a continuidade dos projetos a médio e longo prazo.",
+        "technologies": [
+            "Arduino", "PIC16F", "Arm", "ESP32", "Raspberry Pi", "C", "Python", "C#", "Visual Studio", "NotePad++", "Microsoft Office" 
+        ],
+        "medias": [
+            {
+                "icon": "facebook",
+                "title": "Facebook Ban Vien",
+                "http": "https://vi-vn.facebook.com/openlabhcmute/"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/sao-paulo.jpg"
+    },
+    {
+        "id": 3,
+        "position": 3,
+        "startAt": "11-16-2020",
+        "companyName": "Ban Vien",
+        "website": "https://banvien.com/",
+        "logo": "assets/template/experience/logo/ban-vien-logo.png",
+        "city": "District 4, Ho Chi Minh",
+        "country": "Viet Nam",
+        "role": "Embedded Software Engineer",
+        "description": "Ban Vien Company Limited – are Trusted Technology Partner in Software Development & Embedded System development, have been providing full scope of IT services for 10+ years in Automotive (Chip Driver Development), Education (K-12 LMS Platform, Professional e-Training Platform), e-Commerce (Customer Development & Sales Development) for FMCG industry, Banking & Finance, Insurance.<br><br>Ban Vien provides Automotive Embedded Services to build solutions for global leaders in micro-controller, analogue, power and SoC products. With skilled professionals and decades of experience, we also provide end-to-end services with New Product Development, Product Enhancement, Sustenance, Testing and Verification.<br><br>At here I am in charge of the main job is integration, unit test and verify for automotive source. I have worked to develop the driver for IoT devices, check and detect errors.",
+        "technologies": [
+            "C", "Python", "C#", "xml", "Davinci", "Jira", "GitLab", "Redmine", "Cantata", "SVN", "Microsoft Office" 
+        ],
+        "medias": [
+            {
+                "icon": "linkedin",
+                "title": "LinkedIn Ban Vien",
+                "http": "https://www.linkedin.com/company/ban-vien-co/"
+            },
+            {
+                "icon": "facebook",
+                "title": "Facebook Ban Vien",
+                "http": "https://vi-vn.facebook.com/banvienco/"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/rio.jpg"
+    }
+]
