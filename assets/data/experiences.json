@@ -35,11 +35,11 @@
         "endAt": "10-12-2020",
         "companyName": "Open Lab",
         "website": "https://openlab.hcmute.edu.vn/",
-        "logo": "assets/template/experience/logo/open-lab-logo.png",
+        "logo": "assets/template/experience/logo/openlab-logo1.png",
         "city": "District 4, Ho Chi Minh City",
         "country": "Ho Chi Minh",
         "role": "Embedded Software Engineer",
-        "description": "A <b>E-tática</b> é uma agência especializada em soluções para <i>comércio eletrônico</i>, marketing digital e identidade visual desde 2008, trabalhando com grandes, pequenos e médios negócios, oferecendo para seus clientes, o know-how na integração de seus negócios com <i>Sistemas integrados de gestão empresarial (ERP)</i> e <i>APIs de terceiros</i>, tais como <i>provedores de pagamento personalizados</i>, fazendo a integração do gerenciamento interno da plataforma on-line e da loja física, sendo certificada pelas principais plataformas do mercado.<br><br>Na <i>E-tática </i>, trabalhei para desenvolver soluções personalizadas para clientes do atacado e varejo, valorizando a qualidade e a continuidade dos projetos a médio e longo prazo.",
+        "description": "The Open Lab is a Research Center of the University of Technology and Education Ho Chi Minh City (HCMUTE). The Institute has three main objectives: to promote fundamental research in Robotics and Applied Informatics, to cooperate with the community in industrial technological projects, and to offer scientific education through graduate courses.",
         "technologies": [
             "Arduino", "PIC16F", "Arm", "ESP32", "Raspberry Pi", "C", "Python", "C#", "Visual Studio", "NotePad++", "Microsoft Office" 
         ],
@@ -58,7 +58,7 @@
         "startAt": "11-16-2020",
         "companyName": "Ban Vien",
         "website": "https://banvien.com/",
-        "logo": "assets/template/experience/logo/ban-vien-logo.png",
+        "logo": "assets/template/experience/logo/banvien-logo.png",
         "city": "District 4, Ho Chi Minh",
         "country": "Viet Nam",
         "role": "Embedded Software Engineer",
