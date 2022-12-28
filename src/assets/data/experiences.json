@@ -17,7 +17,7 @@
         "medias": [
             {
                 "icon": "linkedin",
-                "title": "LinkedIn Ban Vien",
+                "title": "LinkedIn HCMUTE",
                 "http": "https://www.linkedin.com/school/hcmutespkt/"
             },
             {
@@ -35,18 +35,23 @@
         "endAt": "10-12-2020",
         "companyName": "Open Lab",
         "website": "https://openlab.hcmute.edu.vn/",
-        "logo": "assets/template/experience/logo/openlab-logo1.png",
-        "city": "District 4, Ho Chi Minh City",
+        "logo": "assets/template/experience/logo/openlab-logo.png",
+        "city": "Thu Duc City",
         "country": "Ho Chi Minh",
-        "role": "Embedded Software Engineer",
+        "role": "Scientific Researcher",
         "description": "The Open Lab is a Research Center of the University of Technology and Education Ho Chi Minh City (HCMUTE). The Institute has three main objectives: to promote fundamental research in Robotics and Applied Informatics, to cooperate with the community in industrial technological projects, and to offer scientific education through graduate courses.",
         "technologies": [
             "Arduino", "PIC16F", "Arm", "ESP32", "Raspberry Pi", "C", "Python", "C#", "Visual Studio", "NotePad++", "Microsoft Office" 
         ],
         "medias": [
             {
+                "icon": "linkedin",
+                "title": "LinkedIn OpenLab",
+                "http": "https://www.linkedin.com/"
+            },
+            {
                 "icon": "facebook",
-                "title": "Facebook Ban Vien",
+                "title": "Facebook OpenLab",
                 "http": "https://vi-vn.facebook.com/openlabhcmute/"
             }
         ],
@@ -66,7 +71,7 @@
         "technologies": [
             "C", "Python", "C#", "xml", "Davinci", "Jira", "GitLab", "Redmine", "Cantata", "SVN", "Microsoft Office" 
         ],
-        "medias": [
+        "medias": [ 
             {
                 "icon": "linkedin",
                 "title": "LinkedIn Ban Vien",
